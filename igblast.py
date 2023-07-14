@@ -60,7 +60,7 @@ def info_to_dataframe(html):
     list.append(f'Length={Length}')
     df0 = pd.DataFrame(data=list).T
     l.append(df0)
-    seqs = re.findall('EntrezView" >(.*?)</a>germline gene', html, re.S)
+    seqs = re.findall('EntrezView">(.*?)</a>germline gene', html, re.S)
     df[len(df.T)] = seqs
     scores = re.findall('"EntrezView".*?germline gene.*?>(.*?)</a>', html, re.S)
     df[len(df.T)] = scores
