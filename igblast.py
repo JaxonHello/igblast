@@ -7,11 +7,19 @@ import logging
 
 
 logging.basicConfig(level=logging.INFO)
+
+# !!!!!!!!!!!因为该程序涉及selenium模拟浏览器操作，请确保您有合适的webdriver安装!!!!!!
+
 # 请输入您的项目文件的绝对路径 --> 在此修改！！
 FILE_PATH = '/Users/jaxonhe/Desktop/30-369334923.fasta'
 
 
 def scrape_html_selenium(file_path):
+    """
+    simulate to surf the Internet
+    :param file_path: absolute file path
+    :return: result html page
+    """
     option = webdriver.ChromeOptions()
     option.add_argument('headless')
     driver = webdriver.Chrome(options=option)
@@ -70,7 +78,7 @@ def df_D_reduction(df):
 
 def info_to_dataframe(html):
     """
-    find text infomation of html page
+    find text information of html page which is not <table> label
     :param html: html page
     :return: dataframe
     """
