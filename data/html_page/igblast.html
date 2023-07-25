@@ -1,0 +1,1098 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>IgBLAST Search Results</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="referrer" content="origin-when-cross-origin" />
+<meta name="ncbipopper" content="'openAnimation': 'none', 'closeAnimation': 'none'"/>
+<meta name="ncbi_app" content="igblast" />
+<meta name="ncbi_pdid" content="blastresults" />
+<meta name="ncbi_db" content="human-IG" />
+<meta name="ncbi_program" content="blastn" />
+<meta name="ncbi_phid" content="2CD9556B4BE409610000000000000001" />
+<meta name="ncbi_sessionid" content="0751FC9F4AE7A9E1_0000SID" />
+<script type="text/javascript">    var ncbi_startTime = new Date(); </script>
+<script type="text/javascript" src="/core/jig/1.14.8/js/jig.min.js"></script>
+<script type="text/javascript" src="js/align.js"></script>
+<meta http-equiv="Pragma" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/uswds.min.css" media="screen" />
+<!-- <link rel="stylesheet"  type="text/css" href="https://www.ncbi.nlm.nih.gov/style-guide/static/nwds/css/nwds.css"/> -->
+<link rel="stylesheet"  type="text/css" href="css/nwds.css"/>
+<link rel="stylesheet" href="css/header.css"/>
+<link rel="stylesheet" href="css/footer.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous"> <!-- Font Awesome icons -->
+<link rel="stylesheet" type="text/css" href="css/footer.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/align.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/alignIE.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+</head>
+<body id="type-b">
+<div id="wrap">
+    <script>var useOfficialGovtHeader = true;</script>
+<section class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner">
+        <img src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/favicons/favicon-57.png" alt="U.S. flag">
+        <p>An official website of the United States government</p>
+        <button class="usa-accordion-button usa-banner-button" aria-expanded="false" aria-controls="gov-banner-top">
+          <span class="usa-banner-button-text">Here's how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner-top" aria-hidden="true">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before
+            sharing sensitive information, make sure you’re on a federal
+            government site.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-https.svg" alt="Https">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the
+            official website and that any information you provide is encrypted
+            and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="ncbi-header" role="banner" data-section="Header">
+<a class="usa-skipnav" href="#mainCont">Skip to main page content</a>
+<div class="usa-grid">
+    <div class="usa-width-one-whole">
+        <div class="ncbi-header__logo">
+                <a href="https://www.ncbi.nlm.nih.gov/" class="logo" aria-label="NCBI Logo" data-ga-action="click_image" data-ga-label="NIH NLM Logo">
+                  <img src="https://www.ncbi.nlm.nih.gov/coreutils/nwds/img/logos/AgencyLogo.svg" alt="NIH NLM Logo">
+                </a>
+            </div>
+
+        <div class="ncbi-header__account">
+            <a id="account_login" href="https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fwww%2Encbi%2Enlm%2Enih%2Egov%2Figblast%2Figblast%2Ecgi%3FCMD%3DWeb" class="usa-button header-button">Log in</a>
+            <button id="account_info" class="header-button" aria-controls="account_popup">
+                <span class="fa fa-user" aria-hidden="true"></span>
+                <span class="username desktop-only" aria-hidden="true" id="uname_short"></span>
+                <span class="sr-only">Show account info</span>
+            </button>
+        </div>
+
+        <div class="ncbi-popup-anchor">
+            <div class="ncbi-popup account-popup" id="account_popup" aria-hidden="true" role="dialog" aria-labelledby="account-popup-header">
+                <div class="ncbi-popup-head">
+                    <button class="ncbi-close-button"><span class="fa fa-window-close"></span><span class="usa-sr-only">Close</span></button>
+                    <h4>Account</h4>
+                </div>
+                <div class="account-user-info">
+                    Logged in as:<br>
+                    <b><span class="username" id="uname_long">username</span></b>
+                </div>
+                <div class="account-links">
+                    <ul class="usa-unstyled-list">
+                        <li><a id="account_myncbi" href="https://www.ncbi.nlm.nih.gov/myncbi/">Dashboard</a> <span class="ncbi-text-small-light">(My NCBI)</span></li>
+                        <li><a id="account_pubs" href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/">Publications</a> <span class="ncbi-text-small-light">(My Bibliography)</span></li>
+                        <li><a id="account_settings" href="https://www.ncbi.nlm.nih.gov/account/settings/">Account settings</a></li>
+                        <li><a id="account_logout" href="https://www.ncbi.nlm.nih.gov/account/signout/?back_url=https%3A%2F%2Fwww%2Encbi%2Enlm%2Enih%2Egov%2Figblast%2Figblast%2Ecgi%3FCMD%3DWeb">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</header>
+<div role="navigation" aria-label="access keys">
+<a id="nws_header_accesskey_0" href="https://www.ncbi.nlm.nih.gov/guide/browsers/#ncbi_accesskeys" class="usa-sr-only" accesskey="0" tabindex="-1">Access keys</a>
+<a id="nws_header_accesskey_1" href="https://www.ncbi.nlm.nih.gov" class="usa-sr-only" accesskey="1" tabindex="-1">NCBI Homepage</a>
+<a id="nws_header_accesskey_2" href="/myncbi/" class="set-base-url usa-sr-only" accesskey="2" tabindex="-1">MyNCBI Homepage</a>
+<a id="nws_header_accesskey_3" href="#maincontent" class="usa-sr-only" accesskey="3" tabindex="-1">Main Content</a>
+<a id="nws_header_accesskey_4" href="#" class="usa-sr-only" accesskey="4" tabindex="-1">Main Navigation</a>
+</div>
+
+<nav class="ncbi-topnav" id="navcontent">
+    <div class="usa-grid">
+        <span class="lf"><a class="lfa" href="index.cgi">IGBLAST</a><span class="brc"><span class="brcrmbsign">&raquo;</span> JOB ID: vKF3ptDe0Wb6UMxVxQ3ddqcM0HO6Ew</span></span>
+        <span id="brc"></span>
+        <span class="rf"></span>
+    </div>
+</nav>
+
+<div class="" id="banner_ad">
+<div>
+<div> <i class="fas fa-user-friends"></i><span>
+<a href="mailto:blast-help@ncbi.nlm.nih.gov?subject=IgBLAST user research.&amp;body=Please contact me about how I use IgBLAST and how I can contribute to improving it." id="jt" class="jt" target="hlp">Participate in IgBLAST user interviews.</span></a></div>
+<div class="help">We want to hear from you about how IgBLAST can be improved.</div>
+</div>
+<input class="sbt" id="btnJt" type="button" value="Contact us" src=""/>
+<button class="close" id="closeAd" aria-controls="banner_ad" blastspec="igblast"><i class="fas fa-times"></i></button>
+</div>
+    
+    <div id="content-wrap">                     
+        <div class="pageTitle">                            
+            Formatting Results
+        </div>                
+                
+        <div id="content">                        
+        <PRE>
+Database: imgt.Homo_sapiens.V.f.orf.p; imgt.Homo_sapiens.D.f.orf;
+imgt.Homo_sapiens.J.f.orf
+           687 sequences; 183,460 total letters
+
+<a href=#clonotype>Clonotype summary</a>
+<hr>Index for multiple query sequences (total = 7)
+<a href=#index0>Query=lcl|Query_1 L-A10-XhoI-CL_A11.ab1</a>
+<a href=#index1>Query=lcl|Query_2 L-A11-XhoI-CL_B11.ab1</a>
+<a href=#index2>Query=lcl|Query_3 L-B2-XhoI-CL_C11.ab1</a>
+<a href=#index3>Query=lcl|Query_4 L-B6-XhoI-CL_D11.ab1</a>
+<a href=#index4>Query=lcl|Query_5 L-C2-XhoI-CL_E11.ab1</a>
+<a href=#index5>Query=lcl|Query_6 L-D3-XhoI-CL_F11.ab1</a>
+<a href=#index6>Query=lcl|Query_7 L-D4-XhoI-CL_G11.ab1</a>
+<hr>
+<a name=index0></a>
+
+
+<b>Query=</b> L-A10-XhoI-CL_A11.ab1
+
+Length=375
+                                                                                                      Score     E
+Sequences producing significant alignments:                                                          (Bits)  Value
+
+<a title="Show report for IGLV1-51*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV1-51*01</a>germline gene                                                                              <a href=#_0_IGLV1-51*01>449</a>     4e-128
+<a title="Show report for IGLV1-51*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV1-51*02</a>germline gene                                                                              <a href=#_0_IGLV1-51*02>442</a>     3e-126
+<a title="Show report for IGLV1-41*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLV1-41*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV1-41*01</a>germline gene                                                                              <a href=#_0_IGLV1-41*01>383</a>     2e-108
+<a title="Show report for IGLJ2*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ2*01</a>germline gene                                                                                 <a href=#_0_IGLJ2*01>52.6</a>    6e-11 
+<a title="Show report for IGLJ3*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*01</a>germline gene                                                                                 <a href=#_0_IGLJ3*01>52.6</a>    6e-11 
+<a title="Show report for IGLJ3*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*02</a>germline gene                                                                                 <a href=#_0_IGLJ3*02>46.8</a>    3e-09 
+
+
+Domain classification requested: imgt
+
+<br>Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence.
+
+<br>V-(D)-J rearrangement summary for query sequence (multiple equivalent top matches, if present, are separated by a comma):
+<table border=1>
+<tr><td>Top V gene match</td><td>Top J gene match</td><td>Chain type</td><td>stop codon</td><td>V-J frame</td><td>Productive</td><td>Strand</td><td>V frame shift</td></tr>
+<tr><td>IGLV1-51*01</td><td>IGLJ2*01,IGLJ3*01</td><td>VL</td><td>No</td><td>In-frame</td><td>Yes</td><td>-</td><td>No</td></tr></table>
+<br>V-(D)-J junction details based on top germline gene matches:
+<table border=1>
+<tr><td>V region end</td><td>V-J junction*</td><td>J region start</td></tr>
+<tr><td>AGCGC</td>	<td>GGC</td>	<td>GGTAT</td>	</tr>
+</table>*: Overlapping nucleotides may exist at V-D-J junction (i.e, nucleotides that could be assigned 
+to either rearranging gene).  Such nucleotides are indicated inside a parenthesis (i.e., (TACAT))
+ but are not included under the V, D or J gene itself.
+
+
+Sub-region sequence details:
+<table border=1>
+<tr><td> </td><td>Nucleotide sequence</td><td>Translation</td><td>Start</td><td>End</td><tr><td>CDR3</td><td>GGAACAAGGGATAGCAGCCTGAGCGCGGCGGTA	</td><td>GTRDSSLSAAV	</td><td>281	</td><td>313	</td></tr>
+</table>
+
+<br>Alignment summary between query and top germline V gene hit:
+<table border=1><tr><td> </td><td> from </td><td> to </td><td> length </td><td> matches </td><td> mismatches </td><td> gaps </td><td> identity(%) </td></tr>
+<tr><td> FR1-IMGT </td><td> 14 </td><td> 88 </td><td> 75 </td><td> 74 </td><td> 1 </td><td> 0 </td><td> 98.7 </td></tr>
+<tr><td> CDR1-IMGT </td><td> 89 </td><td> 112 </td><td> 24 </td><td> 24 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR2-IMGT </td><td> 113 </td><td> 163 </td><td> 51 </td><td> 51 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR2-IMGT </td><td> 164 </td><td> 172 </td><td> 9 </td><td> 9 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR3-IMGT </td><td> 173 </td><td> 280 </td><td> 108 </td><td> 108 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR3-IMGT (germline) </td><td> 281 </td><td> 306 </td><td> 26 </td><td> 24 </td><td> 2 </td><td> 0 </td><td> 92.3 </td></tr>
+<tr><td> Total </td><td> </td><td> </td><td> 293 </td><td> 290 </td><td> 3 </td><td> 0 </td><td> 99 </td></tr></table>
+
+<CENTER><b><FONT color="green">Alignments</FONT></b></CENTER>
+
+                                               &lt;--------------------------------FR1-IMGT---------------------------------&gt;&lt;-------CDR1-IM
+                                                Q  S  V  L  T  Q  P  P  S  V  S  A  A  P  G  Q  K  V  T  I  S  C  S  G  S  S  S  N  I  G 
+                    lcl|Query_1_reversed  14   CAGTCTGTGCTGACGCAGCCGCCCTCAGTGTCTGCGGCCCCAGGACAGAAGGTCACCATCTCCTGCTCTGGAAGCAGCTCCAACATTGGG  103
+<a name=#_0_IGLV1-51*01></a>V  99.0% (290/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*01</a></span>           1    .........T................................................................................  90
+                                                Q  S  V  L  T  Q  P  P  S  V  S  A  A  P  G  Q  K  V  T  I  S  C  S  G  S  S  S  N  I  G 
+<a name=#_0_IGLV1-51*02></a>V  98.3% (288/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*02</a></span>           1    .........T................................................................................  90
+<a name=#_0_IGLV1-41*01></a>V  91.8% (269/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-41*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-41*01</a></span>           1    .........T.............T.........................................................G....G...  90
+
+                                               GT------&gt;&lt;--------------------FR2-IMGT---------------------&gt;&lt;CDR2-IM&gt;&lt;--------------------
+                                                N  N  Y  V  S  W  Y  Q  Q  L  P  G  T  A  P  K  L  L  I  Y  D  N  N  K  R  P  S  G  I  P 
+                    lcl|Query_1_reversed  104  AATAATTATGTATCCTGGTACCAGCAGCTCCCAGGAACAGCCCCCAAACTCCTCATTTATGACAATAATAAGCGACCCTCAGGGATTCCT  193
+<a name=#_0_IGLV1-51*01></a>V  99.0% (290/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*01</a></span>           91   ..........................................................................................  180
+                                                N  N  Y  V  S  W  Y  Q  Q  L  P  G  T  A  P  K  L  L  I  Y  D  N  N  K  R  P  S  G  I  P 
+<a name=#_0_IGLV1-51*02></a>V  98.3% (288/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*02</a></span>           91   ........................................................C.....A...........................  180
+<a name=#_0_IGLV1-41*01></a>V  91.8% (269/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-41*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-41*01</a></span>           91   ...T..GCG...............................................C.....A...........................  180
+
+                                               -----------------------------FR3-IMGT-------------------------------------------------&gt;&lt;--
+                                                D  R  F  S  G  S  K  S  G  T  S  A  T  L  G  I  T  G  L  Q  T  G  D  E  A  D  Y  Y  C  G 
+                    lcl|Query_1_reversed  194  GACCGATTCTCTGGCTCCAAGTCTGGCACGTCAGCCACCCTGGGCATCACCGGACTCCAGACTGGGGACGAGGCCGATTATTACTGCGGA  283
+<a name=#_0_IGLV1-51*01></a>V  99.0% (290/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*01</a></span>           181  ..........................................................................................  270
+                                                D  R  F  S  G  S  K  S  G  T  S  A  T  L  G  I  T  G  L  Q  T  G  D  E  A  D  Y  Y  C  G 
+<a name=#_0_IGLV1-51*02></a>V  98.3% (288/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*02</a></span>           181  ..........................................................................................  270
+<a name=#_0_IGLV1-41*01></a>V  91.8% (269/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-41*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-41*01</a></span>           181  .............................C....................T..C...TG.C...A......................TT.  270
+
+                                               ---------CDR3-IMGT-----------&gt;&lt;------FR4-IMGT-------&gt;
+                                                T  R  D  S  S  L  S  A  A  V  F  G  G  G  T  K  L  T
+                    lcl|Query_1_reversed  284  ACAAGGGATAGCAGCCTGAGCGCGGCGGTATTCGGCGGAGGGACCAAGCTGAC  336
+<a name=#_0_IGLV1-51*01></a>V  99.0% (290/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*01</a></span>           271  ...T................T..------------------------------  293
+                                                T  <font color="#F805F5"><b>W  </b></font>D  S  S  L  S  A                              
+<a name=#_0_IGLV1-51*02></a>V  98.3% (288/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-51*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-51*02</a></span>           271  ...T................T..------------------------------  293
+<a name=#_0_IGLV1-41*01></a>V  91.8% (269/293)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-41*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-41*01</a></span>           271  G..T......C.....C...A..------------------------------  293
+<a name=#_0_IGLJ2*01></a>J  100.0% (27/27)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ2*01</a></span>              4    --------------------------...........................  30
+<a name=#_0_IGLJ3*01></a>J  100.0% (27/27)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*01</a></span>              4    --------------------------...........................  30
+<a name=#_0_IGLJ3*02></a>J  96.3% (26/27)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*02</a></span>              4    --------------------------...G.......................  30
+
+
+Lambda      K        H
+    1.10    0.333    0.549 
+
+Gapped
+Lambda      K        H
+    1.08    0.280    0.540 
+
+Effective search space used: 56842417
+<hr>
+<a name=index1></a>
+
+
+<b>Query=</b> L-A11-XhoI-CL_B11.ab1
+
+Length=371
+                                                                                                      Score     E
+Sequences producing significant alignments:                                                          (Bits)  Value
+
+<a title="Show report for IGLV1-44*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV1-44*01</a>germline gene                                                                              <a href=#_1_IGLV1-44*01>459</a>     2e-131
+<a title="Show report for IGLV1-44*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV1-44*02</a>germline gene                                                                              <a href=#_1_IGLV1-44*02>456</a>     2e-130
+<a title="Show report for IGLV1-44*03"  href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV1-44*03</a>germline gene                                                                              <a href=#_1_IGLV1-44*03>456</a>     2e-130
+<a title="Show report for IGLJ3*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*02</a>germline gene                                                                                 <a href=#_1_IGLJ3*02>64.1</a>    2e-14 
+<a title="Show report for IGLJ2*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ2*01</a>germline gene                                                                                 <a href=#_1_IGLJ2*01>58.4</a>    1e-12 
+<a title="Show report for IGLJ3*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*01</a>germline gene                                                                                 <a href=#_1_IGLJ3*01>58.4</a>    1e-12 
+
+
+Domain classification requested: imgt
+
+<br>Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence.
+
+<br>V-(D)-J rearrangement summary for query sequence (multiple equivalent top matches, if present, are separated by a comma):
+<table border=1>
+<tr><td>Top V gene match</td><td>Top J gene match</td><td>Chain type</td><td>stop codon</td><td>V-J frame</td><td>Productive</td><td>Strand</td><td>V frame shift</td></tr>
+<tr><td>IGLV1-44*01</td><td>IGLJ3*02</td><td>VL</td><td>No</td><td>In-frame</td><td>Yes</td><td>-</td><td>No</td></tr></table>
+<br>V-(D)-J junction details based on top germline gene matches:
+<table border=1>
+<tr><td>V region end</td><td>V-J junction*</td><td>J region start</td></tr>
+<tr><td>GGTCC</td>	<td></td>	<td>GGTGT</td>	</tr>
+</table>*: Overlapping nucleotides may exist at V-D-J junction (i.e, nucleotides that could be assigned 
+to either rearranging gene).  Such nucleotides are indicated inside a parenthesis (i.e., (TACAT))
+ but are not included under the V, D or J gene itself.
+
+
+Sub-region sequence details:
+<table border=1>
+<tr><td> </td><td>Nucleotide sequence</td><td>Translation</td><td>Start</td><td>End</td><tr><td>CDR3</td><td>GCAGCATGGGATGACAGCCTGAATGGTCCGGTG	</td><td>AAWDDSLNGPV	</td><td>280	</td><td>312	</td></tr>
+</table>
+
+<br>Alignment summary between query and top germline V gene hit:
+<table border=1><tr><td> </td><td> from </td><td> to </td><td> length </td><td> matches </td><td> mismatches </td><td> gaps </td><td> identity(%) </td></tr>
+<tr><td> FR1-IMGT </td><td> 13 </td><td> 87 </td><td> 75 </td><td> 74 </td><td> 1 </td><td> 0 </td><td> 98.7 </td></tr>
+<tr><td> CDR1-IMGT </td><td> 88 </td><td> 111 </td><td> 24 </td><td> 24 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR2-IMGT </td><td> 112 </td><td> 162 </td><td> 51 </td><td> 51 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR2-IMGT </td><td> 163 </td><td> 171 </td><td> 9 </td><td> 9 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR3-IMGT </td><td> 172 </td><td> 279 </td><td> 108 </td><td> 108 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR3-IMGT (germline) </td><td> 280 </td><td> 308 </td><td> 29 </td><td> 29 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> Total </td><td> </td><td> </td><td> 296 </td><td> 295 </td><td> 1 </td><td> 0 </td><td> 99.7 </td></tr></table>
+
+<CENTER><b><FONT color="green">Alignments</FONT></b></CENTER>
+
+                                               &lt;--------------------------------FR1-IMGT---------------------------------&gt;&lt;-------CDR1-IM
+                                                Q  S  V  L  T  Q  P  P  S  A  S  G  T  P  G  Q  R  V  T  I  S  C  S  G  S  S  S  N  I  G 
+                    lcl|Query_2_reversed  13   CAGTCTGTGCTGACGCAGCCACCCTCAGCGTCTGGGACCCCCGGGCAGAGGGTCACCATCTCTTGTTCTGGAAGCAGCTCCAACATCGGA  102
+<a name=#_1_IGLV1-44*01></a>V  99.7% (295/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*01</a></span>           1    ..............T...........................................................................  90
+                                                Q  S  V  L  T  Q  P  P  S  A  S  G  T  P  G  Q  R  V  T  I  S  C  S  G  S  S  S  N  I  G 
+<a name=#_1_IGLV1-44*02></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*02</a></span>           1    ..............T...........................................................................  90
+<a name=#_1_IGLV1-44*03></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*03</a></span>           1    ..............T...........................................................................  90
+
+                                               GT------&gt;&lt;--------------------FR2-IMGT---------------------&gt;&lt;CDR2-IM&gt;&lt;--------------------
+                                                S  N  T  V  N  W  Y  Q  Q  L  P  G  T  A  P  K  L  L  I  Y  S  N  N  Q  R  P  S  G  V  P 
+                    lcl|Query_2_reversed  103  AGTAATACTGTAAACTGGTACCAGCAGCTCCCAGGAACGGCCCCCAAACTCCTCATCTATAGTAATAATCAGCGGCCCTCAGGGGTCCCT  192
+<a name=#_1_IGLV1-44*01></a>V  99.7% (295/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*01</a></span>           91   ..........................................................................................  180
+                                                S  N  T  V  N  W  Y  Q  Q  L  P  G  T  A  P  K  L  L  I  Y  S  N  N  Q  R  P  S  G  V  P 
+<a name=#_1_IGLV1-44*02></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*02</a></span>           91   ........................................G.................................................  180
+<a name=#_1_IGLV1-44*03></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*03</a></span>           91   ........................................................................................T.  180
+
+                                               -----------------------------FR3-IMGT-------------------------------------------------&gt;&lt;--
+                                                D  R  F  S  G  S  K  S  G  T  S  A  S  L  A  I  S  G  L  Q  S  E  D  E  A  D  Y  Y  C  A 
+                    lcl|Query_2_reversed  193  GACCGATTCTCTGGCTCCAAGTCTGGCACCTCAGCCTCCCTGGCCATCAGTGGGCTCCAGTCTGAGGATGAGGCTGATTATTACTGTGCA  282
+<a name=#_1_IGLV1-44*01></a>V  99.7% (295/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*01</a></span>           181  ..........................................................................................  270
+                                                D  R  F  S  G  S  K  S  G  T  S  A  S  L  A  I  S  G  L  Q  S  E  D  E  A  D  Y  Y  C  A 
+<a name=#_1_IGLV1-44*02></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*02</a></span>           181  ..........................................................................................  270
+<a name=#_1_IGLV1-44*03></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*03</a></span>           181  ..........................................................................................  270
+
+                                               ---------CDR3-IMGT-----------&gt;&lt;----------FR4-IMGT----------&gt; 
+                                                A  W  D  D  S  L  N  G  P  V  F  G  G  G  T  K  L  T  X  L  
+                    lcl|Query_2_reversed  283  GCATGGGATGACAGCCTGAATGGTCCGGTGTTCGGCGGAGGGACCAAGCTGACCNTCCTAG  343
+<a name=#_1_IGLV1-44*01></a>V  99.7% (295/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*01</a></span>           271  ..........................-----------------------------------  296
+                                                A  W  D  D  S  L  N  G  P                                   
+<a name=#_1_IGLV1-44*02></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*02</a></span>           271  ..........................-----------------------------------  296
+<a name=#_1_IGLV1-44*03></a>V  99.3% (294/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV1-44*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV1-44*03</a></span>           271  ..........................-----------------------------------  296
+<a name=#_1_IGLJ3*02></a>J  97.1% (34/35)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*02</a></span>              4    --------------------------............................G......  38
+<a name=#_1_IGLJ2*01></a>J  94.3% (33/35)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ2*01</a></span>              4    --------------------------...A........................G......  38
+<a name=#_1_IGLJ3*01></a>J  94.3% (33/35)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*01</a></span>              4    --------------------------...A........................G......  38
+
+
+Lambda      K        H
+    1.10    0.333    0.549 
+
+Gapped
+Lambda      K        H
+    1.08    0.280    0.540 
+
+Effective search space used: 56187173
+<hr>
+<a name=index2></a>
+
+
+<b>Query=</b> L-B2-XhoI-CL_C11.ab1
+
+Length=371
+                                                                                                      Score     E
+Sequences producing significant alignments:                                                          (Bits)  Value
+
+<a title="Show report for IGLV2-23*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*02</a>germline gene                                                                              <a href=#_2_IGLV2-23*02>456</a>     2e-130
+<a title="Show report for IGLV2-23*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*01</a>germline gene                                                                              <a href=#_2_IGLV2-23*01>453</a>     1e-129
+<a title="Show report for IGLV2-23*03"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*03</a>germline gene                                                                              <a href=#_2_IGLV2-23*03>453</a>     1e-129
+<a title="Show report for IGLJ2*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ2*01</a>germline gene                                                                                 <a href=#_2_IGLJ2*01>68.0</a>    1e-15 
+<a title="Show report for IGLJ3*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*01</a>germline gene                                                                                 <a href=#_2_IGLJ3*01>68.0</a>    1e-15 
+<a title="Show report for IGLJ3*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*02</a>germline gene                                                                                 <a href=#_2_IGLJ3*02>58.4</a>    1e-12 
+
+
+Domain classification requested: imgt
+
+<br>Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence.
+
+<br>V-(D)-J rearrangement summary for query sequence (multiple equivalent top matches, if present, are separated by a comma):
+<table border=1>
+<tr><td>Top V gene match</td><td>Top J gene match</td><td>Chain type</td><td>stop codon</td><td>V-J frame</td><td>Productive</td><td>Strand</td><td>V frame shift</td></tr>
+<tr><td>IGLV2-23*02</td><td>IGLJ2*01,IGLJ3*01</td><td>VL</td><td>No</td><td>In-frame</td><td>Yes</td><td>-</td><td>No</td></tr></table>
+<br>V-(D)-J junction details based on top germline gene matches:
+<table border=1>
+<tr><td>V region end</td><td>V-J junction*</td><td>J region start</td></tr>
+<tr><td>GCACT</td>	<td></td>	<td>GTGGT</td>	</tr>
+</table>*: Overlapping nucleotides may exist at V-D-J junction (i.e, nucleotides that could be assigned 
+to either rearranging gene).  Such nucleotides are indicated inside a parenthesis (i.e., (TACAT))
+ but are not included under the V, D or J gene itself.
+
+
+Sub-region sequence details:
+<table border=1>
+<tr><td> </td><td>Nucleotide sequence</td><td>Translation</td><td>Start</td><td>End</td><tr><td>CDR3</td><td>TGCTCATATGCAGGTAGTAGCACTGTGGTA	</td><td>CSYAGSSTVV	</td><td>283	</td><td>312	</td></tr>
+</table>
+
+<br>Alignment summary between query and top germline V gene hit:
+<table border=1><tr><td> </td><td> from </td><td> to </td><td> length </td><td> matches </td><td> mismatches </td><td> gaps </td><td> identity(%) </td></tr>
+<tr><td> FR1-IMGT </td><td> 13 </td><td> 87 </td><td> 75 </td><td> 75 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR1-IMGT </td><td> 88 </td><td> 114 </td><td> 27 </td><td> 27 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR2-IMGT </td><td> 115 </td><td> 165 </td><td> 51 </td><td> 51 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR2-IMGT </td><td> 166 </td><td> 174 </td><td> 9 </td><td> 9 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR3-IMGT </td><td> 175 </td><td> 282 </td><td> 108 </td><td> 107 </td><td> 1 </td><td> 0 </td><td> 99.1 </td></tr>
+<tr><td> CDR3-IMGT (germline) </td><td> 283 </td><td> 306 </td><td> 24 </td><td> 24 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> Total </td><td> </td><td> </td><td> 294 </td><td> 293 </td><td> 1 </td><td> 0 </td><td> 99.7 </td></tr></table>
+
+<CENTER><b><FONT color="green">Alignments</FONT></b></CENTER>
+
+                                               &lt;--------------------------------FR1-IMGT---------------------------------&gt;&lt;--------CDR1-I
+                                                Q  S  A  L  T  Q  P  A  S  V  S  G  S  P  G  Q  S  I  T  I  S  C  T  G  T  S  S  D  V  G 
+                    lcl|Query_3_reversed  13   CAGTCTGCCCTGACTCAGCCTGCCTCCGTGTCTGGGTCTCCTGGACAGTCGATCACCATCTCCTGCACTGGAACCAGCAGTGATGTTGGG  102
+<a name=#_2_IGLV2-23*02></a>V  99.7% (293/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           1    ..........................................................................................  90
+                                                Q  S  A  L  T  Q  P  A  S  V  S  G  S  P  G  Q  S  I  T  I  S  C  T  G  T  S  S  D  V  G 
+<a name=#_2_IGLV2-23*01></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           1    ..........................................................................................  90
+<a name=#_2_IGLV2-23*03></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           1    ..........................................................................................  90
+
+                                               MGT--------&gt;&lt;--------------------FR2-IMGT---------------------&gt;&lt;CDR2-IM&gt;&lt;-----------------
+                                                S  Y  N  L  V  S  W  Y  Q  Q  H  P  G  K  A  P  K  L  M  I  Y  E  V  S  K  R  P  S  G  V 
+                    lcl|Query_3_reversed  103  AGTTATAACCTTGTCTCCTGGTACCAACAGCACCCAGGCAAAGCCCCCAAACTCATGATTTATGAGGTCAGTAAGCGGCCCTCAGGGGTT  192
+<a name=#_2_IGLV2-23*02></a>V  99.7% (293/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           91   ..........................................................................................  180
+                                                S  Y  N  L  V  S  W  Y  Q  Q  H  P  G  K  A  P  K  L  M  I  Y  E  V  S  K  R  P  S  G  V 
+<a name=#_2_IGLV2-23*01></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           91   ...................................................................G......................  180
+<a name=#_2_IGLV2-23*03></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           91   ...................................................................G......................  180
+
+                                               --------------------------------FR3-IMGT-------------------------------------------------&gt;
+                                                S  N  R  F  S  G  S  K  Y  G  N  T  A  S  L  T  I  S  G  L  Q  A  E  D  E  A  D  Y  Y  C 
+                    lcl|Query_3_reversed  193  TCTAATCGCTTCTCTGGCTCCAAGTATGGCAACACGGCCTCCCTGACAATCTCTGGGCTCCAGGCTGAGGACGAGGCTGATTATTACTGC  282
+<a name=#_2_IGLV2-23*02></a>V  99.7% (293/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           181  .........................C................................................................  270
+                                                S  N  R  F  S  G  S  K  <font color="#F805F5"><b>S  </b></font>G  N  T  A  S  L  T  I  S  G  L  Q  A  E  D  E  A  D  Y  Y  C 
+<a name=#_2_IGLV2-23*01></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           181  .........................C................................................................  270
+<a name=#_2_IGLV2-23*03></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           181  .........................C................................................................  270
+
+                                               &lt;----------CDR3-IMGT---------&gt;&lt;----------FR4-IMGT----------&gt; 
+                                                C  S  Y  A  G  S  S  T  V  V  F  G  G  G  T  K  L  T  X  L  
+                    lcl|Query_3_reversed  283  TGCTCATATGCAGGTAGTAGCACTGTGGTATTCGGCGGAGGGACCAAGCTGACCNTCCTAG  343
+<a name=#_2_IGLV2-23*02></a>V  99.7% (293/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           271  ........................-------------------------------------  294
+                                                C  S  Y  A  G  S  S  T                                      
+<a name=#_2_IGLV2-23*01></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           271  ........................-------------------------------------  294
+<a name=#_2_IGLV2-23*03></a>V  99.3% (292/294)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           271  ........................-------------------------------------  294
+<a name=#_2_IGLJ2*01></a>J  97.3% (36/37)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ2*01</a></span>              2    ------------------------..............................G......  38
+<a name=#_2_IGLJ3*01></a>J  97.3% (36/37)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*01</a></span>              2    ------------------------..............................G......  38
+<a name=#_2_IGLJ3*02></a>J  94.3% (33/35)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*02</a></span>              4    --------------------------...G........................G......  38
+
+
+Lambda      K        H
+    1.10    0.333    0.549 
+
+Gapped
+Lambda      K        H
+    1.08    0.280    0.540 
+
+Effective search space used: 56187173
+<hr>
+<a name=index3></a>
+
+
+<b>Query=</b> L-B6-XhoI-CL_D11.ab1
+
+Length=379
+                                                                                                      Score     E
+Sequences producing significant alignments:                                                          (Bits)  Value
+
+<a title="Show report for IGLV7-46*04"  href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV7-46*04</a>germline gene                                                                              <a href=#_3_IGLV7-46*04>452</a>     5e-129
+<a title="Show report for IGLV7-46*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV7-46*01</a>germline gene                                                                              <a href=#_3_IGLV7-46*01>449</a>     4e-128
+<a title="Show report for IGLV7-46*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV7-46*02</a>germline gene                                                                              <a href=#_3_IGLV7-46*02>445</a>     3e-127
+<a title="Show report for IGLJ3*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*02</a>germline gene                                                                                 <a href=#_3_IGLJ3*02>69.9</a>    4e-16 
+<a title="Show report for IGLJ2*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ2*01</a>germline gene                                                                                 <a href=#_3_IGLJ2*01>58.4</a>    1e-12 
+<a title="Show report for IGLJ3*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*01</a>germline gene                                                                                 <a href=#_3_IGLJ3*01>58.4</a>    1e-12 
+
+
+Domain classification requested: imgt
+
+<br>Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence.
+
+<br>V-(D)-J rearrangement summary for query sequence (multiple equivalent top matches, if present, are separated by a comma):
+<table border=1>
+<tr><td>Top V gene match</td><td>Top J gene match</td><td>Chain type</td><td>stop codon</td><td>V-J frame</td><td>Productive</td><td>Strand</td><td>V frame shift</td></tr>
+<tr><td>IGLV7-46*04</td><td>IGLJ3*02</td><td>VL</td><td>No</td><td>Out-of-frame</td><td>No</td><td>-</td><td>No</td></tr></table>
+<br>V-(D)-J junction details based on top germline gene matches:
+<table border=1>
+<tr><td>V region end</td><td>V-J junction*</td><td>J region start</td></tr>
+<tr><td>GTGCT</td>	<td></td>	<td>TTGGG</td>	</tr>
+</table>*: Overlapping nucleotides may exist at V-D-J junction (i.e, nucleotides that could be assigned 
+to either rearranging gene).  Such nucleotides are indicated inside a parenthesis (i.e., (TACAT))
+ but are not included under the V, D or J gene itself.
+
+
+Sub-region sequence details:
+<table border=1>
+<tr><td> </td><td>Nucleotide sequence</td><td>Translation</td><td>Start</td><td>End</td><tr><td>CDR3</td><td>TTGCTCTCCTATAGTGGTGCTTTGGGTG	</td><td>LLSYSGALG	</td><td>292	</td><td>319	</td></tr>
+</table>
+
+<br>Alignment summary between query and top germline V gene hit:
+<table border=1><tr><td> </td><td> from </td><td> to </td><td> length </td><td> matches </td><td> mismatches </td><td> gaps </td><td> identity(%) </td></tr>
+<tr><td> FR1-IMGT </td><td> 22 </td><td> 96 </td><td> 75 </td><td> 74 </td><td> 1 </td><td> 0 </td><td> 98.7 </td></tr>
+<tr><td> CDR1-IMGT </td><td> 97 </td><td> 123 </td><td> 27 </td><td> 27 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR2-IMGT </td><td> 124 </td><td> 174 </td><td> 51 </td><td> 51 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR2-IMGT </td><td> 175 </td><td> 183 </td><td> 9 </td><td> 9 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR3-IMGT </td><td> 184 </td><td> 291 </td><td> 108 </td><td> 108 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR3-IMGT (germline) </td><td> 292 </td><td> 312 </td><td> 21 </td><td> 21 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> Total </td><td> </td><td> </td><td> 291 </td><td> 290 </td><td> 1 </td><td> 0 </td><td> 99.7 </td></tr></table>
+
+<CENTER><b><FONT color="green">Alignments</FONT></b></CENTER>
+
+                                               &lt;--------------------------------FR1-IMGT---------------------------------&gt;&lt;--------CDR1-I
+                                                Q  T  V  V  T  Q  E  P  S  L  T  V  S  P  G  G  T  V  T  L  T  C  G  S  S  T  G  A  V  T 
+                    lcl|Query_4_reversed  22   CAGACTGTGGTGACTCAGGAGCCCTCACTGACTGTGTCCCCAGGAGGGACAGTCACTCTCACCTGTGGCTCCAGCACTGGAGCTGTCACC  111
+<a name=#_3_IGLV7-46*04></a>V  99.7% (290/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*04</a></span>           1    ...G......................................................................................  90
+                                                Q  <font color="#F805F5"><b>A  </b></font>V  V  T  Q  E  P  S  L  T  V  S  P  G  G  T  V  T  L  T  C  G  S  S  T  G  A  V  T 
+<a name=#_3_IGLV7-46*01></a>V  99.3% (289/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*01</a></span>           1    ...G......................................................................................  90
+<a name=#_3_IGLV7-46*02></a>V  99.0% (288/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*02</a></span>           1    ...G......................................................................................  90
+
+                                               MGT--------&gt;&lt;--------------------FR2-IMGT---------------------&gt;&lt;CDR2-IM&gt;&lt;-----------------
+                                                S  G  H  Y  P  Y  W  F  Q  Q  K  P  G  Q  A  P  R  T  L  I  Y  D  T  S  N  K  H  S  W  T 
+                    lcl|Query_4_reversed  112  AGTGGTCATTATCCCTACTGGTTCCAGCAGAAGCCTGGCCAAGCCCCCAGGACACTGATTTATGATACAAGCAACAAACACTCCTGGACC  201
+<a name=#_3_IGLV7-46*04></a>V  99.7% (290/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*04</a></span>           91   ..........................................................................................  180
+                                                S  G  H  Y  P  Y  W  F  Q  Q  K  P  G  Q  A  P  R  T  L  I  Y  D  T  S  N  K  H  S  W  T 
+<a name=#_3_IGLV7-46*01></a>V  99.3% (289/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*01</a></span>           91   .........................................................................................A  180
+<a name=#_3_IGLV7-46*02></a>V  99.0% (288/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*02</a></span>           91   .........................................................................................A  180
+
+                                               --------------------------------FR3-IMGT-------------------------------------------------&gt;
+                                                P  A  R  F  S  G  S  L  L  G  G  K  A  A  L  T  L  S  G  A  Q  P  E  D  E  A  E  Y  Y  C 
+                    lcl|Query_4_reversed  202  CCTGCCCGGTTCTCAGGCTCCCTCCTTGGGGGCAAAGCTGCCCTGACCCTTTCGGGTGCGCAGCCTGAGGATGAGGCTGAGTATTACTGC  291
+<a name=#_3_IGLV7-46*04></a>V  99.7% (290/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*04</a></span>           181  ..........................................................................................  270
+                                                P  A  R  F  S  G  S  L  L  G  G  K  A  A  L  T  L  S  G  A  Q  P  E  D  E  A  E  Y  Y  C 
+<a name=#_3_IGLV7-46*01></a>V  99.3% (289/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*01</a></span>           181  ..........................................................................................  270
+<a name=#_3_IGLV7-46*02></a>V  99.0% (288/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*02</a></span>           181  ....................................................T.....................................  270
+
+                                               &lt;---------CDR3-IMGT--------&gt;&lt;----------FR4-IMGT----------&gt; 
+                                                L  L  S  Y  S  G  A  L  G  V  R  R  R  D  Q  A  D  X  P   
+                    lcl|Query_4_reversed  292  TTGCTCTCCTATAGTGGTGCTTTGGGTGTTCGGCGGAGGGACCAAGCTGACCNTCCTAG  350
+<a name=#_3_IGLV7-46*04></a>V  99.7% (290/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*04</a></span>           271  .....................--------------------------------------  291
+                                                L  L  S  Y  S  G  A                                       
+<a name=#_3_IGLV7-46*01></a>V  99.3% (289/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*01</a></span>           271  .....................--------------------------------------  291
+<a name=#_3_IGLV7-46*02></a>V  99.0% (288/291)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV7-46*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV7-46*02</a></span>           271  .....................--------------------------------------  291
+<a name=#_3_IGLJ3*02></a>J  97.4% (37/38)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*02</a></span>              1    ---------------------...............................G......  38
+<a name=#_3_IGLJ2*01></a>J  94.3% (33/35)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ2*01</a></span>              4    ------------------------...A........................G......  38
+<a name=#_3_IGLJ3*01></a>J  94.3% (33/35)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*01</a></span>              4    ------------------------...A........................G......  38
+
+
+Lambda      K        H
+    1.10    0.333    0.549 
+
+Gapped
+Lambda      K        H
+    1.08    0.280    0.540 
+
+Effective search space used: 57497661
+<hr>
+<a name=index4></a>
+
+
+<b>Query=</b> L-C2-XhoI-CL_E11.ab1
+
+Length=364
+                                                                                                      Score     E
+Sequences producing significant alignments:                                                          (Bits)  Value
+
+<a title="Show report for IGLV3-21*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV3-21*02</a>germline gene                                                                              <a href=#_4_IGLV3-21*02>441</a>     8e-126
+<a title="Show report for IGLV3-21*03"  href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV3-21*03</a>germline gene                                                                              <a href=#_4_IGLV3-21*03>438</a>     7e-125
+<a title="Show report for IGLV3-21*04"  href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV3-21*04</a>germline gene                                                                              <a href=#_4_IGLV3-21*04>428</a>     5e-122
+<a title="Show report for IGLJ1*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ1*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ1*01</a>germline gene                                                                                 <a href=#_4_IGLJ1*01>73.7</a>    2e-17 
+<a title="Show report for IGLJ6*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ6*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ6*01</a>germline gene                                                                                 <a href=#_4_IGLJ6*01>37.2</a>    2e-06 
+<a title="Show report for IGLJ2*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ2*01</a>germline gene                                                                                 <a href=#_4_IGLJ2*01>31.5</a>    1e-04 
+
+
+Domain classification requested: imgt
+
+<br>Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence.
+
+<br>V-(D)-J rearrangement summary for query sequence (multiple equivalent top matches, if present, are separated by a comma):
+<table border=1>
+<tr><td>Top V gene match</td><td>Top J gene match</td><td>Chain type</td><td>stop codon</td><td>V-J frame</td><td>Productive</td><td>Strand</td><td>V frame shift</td></tr>
+<tr><td>IGLV3-21*02</td><td>IGLJ1*01</td><td>VL</td><td>No</td><td>In-frame</td><td>Yes</td><td>-</td><td>No</td></tr></table>
+<br>V-(D)-J junction details based on top germline gene matches:
+<table border=1>
+<tr><td>V region end</td><td>V-J junction*</td><td>J region start</td></tr>
+<tr><td>TGATC</td>	<td>CCCA</td>	<td>TTATG</td>	</tr>
+</table>*: Overlapping nucleotides may exist at V-D-J junction (i.e, nucleotides that could be assigned 
+to either rearranging gene).  Such nucleotides are indicated inside a parenthesis (i.e., (TACAT))
+ but are not included under the V, D or J gene itself.
+
+
+Sub-region sequence details:
+<table border=1>
+<tr><td> </td><td>Nucleotide sequence</td><td>Translation</td><td>Start</td><td>End</td><tr><td>CDR3</td><td>CAGGTGTGGGATAGTAGTAGTGATCCCCATTATGTC	</td><td>QVWDSSSDPHYV	</td><td>273	</td><td>308	</td></tr>
+</table>
+
+<br>Alignment summary between query and top germline V gene hit:
+<table border=1><tr><td> </td><td> from </td><td> to </td><td> length </td><td> matches </td><td> mismatches </td><td> gaps </td><td> identity(%) </td></tr>
+<tr><td> FR1-IMGT </td><td> 12 </td><td> 86 </td><td> 75 </td><td> 74 </td><td> 1 </td><td> 0 </td><td> 98.7 </td></tr>
+<tr><td> CDR1-IMGT </td><td> 87 </td><td> 104 </td><td> 18 </td><td> 17 </td><td> 1 </td><td> 0 </td><td> 94.4 </td></tr>
+<tr><td> FR2-IMGT </td><td> 105 </td><td> 155 </td><td> 51 </td><td> 51 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR2-IMGT </td><td> 156 </td><td> 164 </td><td> 9 </td><td> 9 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR3-IMGT </td><td> 165 </td><td> 272 </td><td> 108 </td><td> 108 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR3-IMGT (germline) </td><td> 273 </td><td> 297 </td><td> 25 </td><td> 25 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> Total </td><td> </td><td> </td><td> 286 </td><td> 284 </td><td> 2 </td><td> 0 </td><td> 99.3 </td></tr></table>
+
+<CENTER><b><FONT color="green">Alignments</FONT></b></CENTER>
+
+                                               &lt;--------------------------------FR1-IMGT---------------------------------&gt;&lt;----CDR1-IMGT-
+                                                S  Y  E  L  T  Q  P  P  S  V  S  V  A  P  G  Q  T  A  R  I  T  C  G  G  N  N  I  G  S  K 
+                    lcl|Query_5_reversed  12   TCCTATGAGCTGACTCAGCCACCCTCGGTGTCAGTGGCCCCAGGACAGACGGCCAGGATTACCTGTGGGGGAAACAACATTGGAAGTAAA  101
+<a name=#_4_IGLV3-21*02></a>V  99.3% (284/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*02</a></span>           1    .......T..................................................................................  90
+                                                S  Y  <font color="#F805F5"><b>V  </b></font>L  T  Q  P  P  S  V  S  V  A  P  G  Q  T  A  R  I  T  C  G  G  N  N  I  G  S  K 
+<a name=#_4_IGLV3-21*03></a>V  99.0% (283/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*03</a></span>           1    .......T.....................................A............................................  90
+<a name=#_4_IGLV3-21*04></a>V  97.9% (280/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*04</a></span>           1    .......T..................A..................A............................................  90
+
+                                               --&gt;&lt;--------------------FR2-IMGT---------------------&gt;&lt;CDR2-IM&gt;&lt;--------------------------
+                                                N  V  H  W  Y  Q  Q  K  P  G  Q  A  P  V  L  V  V  Y  D  D  S  D  R  P  S  G  I  P  E  R 
+                    lcl|Query_5_reversed  102  AATGTGCACTGGTACCAGCAGAAGCCAGGCCAGGCCCCTGTGCTGGTCGTCTATGATGATAGCGACCGGCCCTCAGGGATCCCTGAGCGA  191
+<a name=#_4_IGLV3-21*02></a>V  99.3% (284/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*02</a></span>           91   .G........................................................................................  180
+                                                <font color="#F805F5"><b>S  </b></font>V  H  W  Y  Q  Q  K  P  G  Q  A  P  V  L  V  V  Y  D  D  S  D  R  P  S  G  I  P  E  R 
+<a name=#_4_IGLV3-21*03></a>V  99.0% (283/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*03</a></span>           91   .G........................................................................................  180
+<a name=#_4_IGLV3-21*04></a>V  97.9% (280/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*04</a></span>           91   .G..............................................A.....T...................................  180
+
+                                               -----------------------FR3-IMGT-------------------------------------------------&gt;&lt;--------
+                                                F  S  G  S  N  S  G  N  T  A  T  L  T  I  S  R  V  E  A  G  D  E  A  D  Y  Y  C  Q  V  W 
+                    lcl|Query_5_reversed  192  TTCTCTGGCTCCAACTCTGGGAACACGGCCACCCTGACCATCAGCAGGGTCGAAGCCGGGGATGAGGCCGACTATTACTGTCAGGTGTGG  281
+<a name=#_4_IGLV3-21*02></a>V  99.3% (284/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*02</a></span>           181  ..........................................................................................  270
+                                                F  S  G  S  N  S  G  N  T  A  T  L  T  I  S  R  V  E  A  G  D  E  A  D  Y  Y  C  Q  V  W 
+<a name=#_4_IGLV3-21*03></a>V  99.0% (283/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*03</a></span>           181  ..........................................................................................  270
+<a name=#_4_IGLV3-21*04></a>V  97.9% (280/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*04</a></span>           181  ..........................................................................................  270
+
+                                               -----CDR3-IMGT------------&gt;&lt;----------FR4-IMGT----------&gt; 
+                                                D  S  S  S  D  P  H  Y  V  F  G  T  G  T  K  V  T  V  L  
+                    lcl|Query_5_reversed  282  GATAGTAGTAGTGATCCCCATTATGTCTTCGGAACTGGGACCAAGGTCACCGTCCTAG  339
+<a name=#_4_IGLV3-21*02></a>V  99.3% (284/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*02</a></span>           271  ................------------------------------------------  286
+                                                D  S  S  S  D                                            
+<a name=#_4_IGLV3-21*03></a>V  99.0% (283/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*03</a></span>           271  ................------------------------------------------  286
+<a name=#_4_IGLV3-21*04></a>V  97.9% (280/286)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV3-21*04&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV3-21*04</a></span>           271  ................------------------------------------------  286
+<a name=#_4_IGLJ1*01></a>J  100.0% (38/38)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ1*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ1*01</a></span>              1    --------------------......................................  38
+<a name=#_4_IGLJ6*01></a>J  85.3% (29/34)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ6*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ6*01</a></span>              3    ----------------------....G.....C.G...C........G........--  36
+<a name=#_4_IGLJ2*01></a>J  90.9% (20/22)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ2*01</a></span>              17   ------------------------------------.........C.G..........  38
+
+
+Lambda      K        H
+    1.10    0.333    0.549 
+
+Gapped
+Lambda      K        H
+    1.08    0.280    0.540 
+
+Effective search space used: 55040496
+<hr>
+<a name=index5></a>
+
+
+<b>Query=</b> L-D3-XhoI-CL_F11.ab1
+
+Length=371
+                                                                                                      Score     E
+Sequences producing significant alignments:                                                          (Bits)  Value
+
+<a title="Show report for IGLV2-23*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*01</a>germline gene                                                                              <a href=#_5_IGLV2-23*01>461</a>     7e-132
+<a title="Show report for IGLV2-23*03"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*03</a>germline gene                                                                              <a href=#_5_IGLV2-23*03>461</a>     7e-132
+<a title="Show report for IGLV2-23*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*02</a>germline gene                                                                              <a href=#_5_IGLV2-23*02>458</a>     6e-131
+<a title="Show report for IGLJ3*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*02</a>germline gene                                                                                 <a href=#_5_IGLJ3*02>66.1</a>    5e-15 
+<a title="Show report for IGLJ2*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ2*01</a>germline gene                                                                                 <a href=#_5_IGLJ2*01>58.4</a>    1e-12 
+<a title="Show report for IGLJ3*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*01</a>germline gene                                                                                 <a href=#_5_IGLJ3*01>58.4</a>    1e-12 
+
+
+Domain classification requested: imgt
+
+<br>Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence.
+
+<br>V-(D)-J rearrangement summary for query sequence (multiple equivalent top matches, if present, are separated by a comma):
+<table border=1>
+<tr><td>Top V gene match</td><td>Top J gene match</td><td>Chain type</td><td>stop codon</td><td>V-J frame</td><td>Productive</td><td>Strand</td><td>V frame shift</td></tr>
+<tr><td>IGLV2-23*01,IGLV2-23*03</td><td>IGLJ3*02</td><td>VL</td><td>No</td><td>In-frame</td><td>Yes</td><td>-</td><td>No</td></tr></table>
+<br>V-(D)-J junction details based on top germline gene matches:
+<table border=1>
+<tr><td>V region end</td><td>V-J junction*</td><td>J region start</td></tr>
+<tr><td>CACTT</td>	<td></td>	<td>GGGTG</td>	</tr>
+</table>*: Overlapping nucleotides may exist at V-D-J junction (i.e, nucleotides that could be assigned 
+to either rearranging gene).  Such nucleotides are indicated inside a parenthesis (i.e., (TACAT))
+ but are not included under the V, D or J gene itself.
+
+
+Sub-region sequence details:
+<table border=1>
+<tr><td> </td><td>Nucleotide sequence</td><td>Translation</td><td>Start</td><td>End</td><tr><td>CDR3</td><td>TGCTCATATGCAGGTAGTAGCACTTGGGTG	</td><td>CSYAGSSTWV	</td><td>283	</td><td>312	</td></tr>
+</table>
+
+<br>Alignment summary between query and top germline V gene hit:
+<table border=1><tr><td> </td><td> from </td><td> to </td><td> length </td><td> matches </td><td> mismatches </td><td> gaps </td><td> identity(%) </td></tr>
+<tr><td> FR1-IMGT </td><td> 13 </td><td> 87 </td><td> 75 </td><td> 75 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR1-IMGT </td><td> 88 </td><td> 114 </td><td> 27 </td><td> 27 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR2-IMGT </td><td> 115 </td><td> 165 </td><td> 51 </td><td> 51 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR2-IMGT </td><td> 166 </td><td> 174 </td><td> 9 </td><td> 9 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR3-IMGT </td><td> 175 </td><td> 282 </td><td> 108 </td><td> 108 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR3-IMGT (germline) </td><td> 283 </td><td> 307 </td><td> 25 </td><td> 25 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> Total </td><td> </td><td> </td><td> 295 </td><td> 295 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr></table>
+
+<CENTER><b><FONT color="green">Alignments</FONT></b></CENTER>
+
+                                                &lt;--------------------------------FR1-IMGT---------------------------------&gt;&lt;--------CDR1-I
+                                                 Q  S  A  L  T  Q  P  A  S  V  S  G  S  P  G  Q  S  I  T  I  S  C  T  G  T  S  S  D  V  G 
+                     lcl|Query_6_reversed  13   CAGTCTGCCCTGACTCAGCCTGCCTCCGTGTCTGGGTCTCCTGGACAGTCGATCACCATCTCCTGCACTGGAACCAGCAGTGATGTTGGG  102
+<a name=#_5_IGLV2-23*01></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           1    ..........................................................................................  90
+                                                 Q  S  A  L  T  Q  P  A  S  V  S  G  S  P  G  Q  S  I  T  I  S  C  T  G  T  S  S  D  V  G 
+<a name=#_5_IGLV2-23*03></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           1    ..........................................................................................  90
+<a name=#_5_IGLV2-23*02></a>V  99.7% (294/295)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           1    ..........................................................................................  90
+
+                                                MGT--------&gt;&lt;--------------------FR2-IMGT---------------------&gt;&lt;CDR2-IM&gt;&lt;-----------------
+                                                 S  Y  N  L  V  S  W  Y  Q  Q  H  P  G  K  A  P  K  L  M  I  Y  E  G  S  K  R  P  S  G  V 
+                     lcl|Query_6_reversed  103  AGTTATAACCTTGTCTCCTGGTACCAACAGCACCCAGGCAAAGCCCCCAAACTCATGATTTATGAGGGCAGTAAGCGGCCCTCAGGGGTT  192
+<a name=#_5_IGLV2-23*01></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           91   ..........................................................................................  180
+                                                 S  Y  N  L  V  S  W  Y  Q  Q  H  P  G  K  A  P  K  L  M  I  Y  E  G  S  K  R  P  S  G  V 
+<a name=#_5_IGLV2-23*03></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           91   ..........................................................................................  180
+<a name=#_5_IGLV2-23*02></a>V  99.7% (294/295)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           91   ...................................................................T......................  180
+
+                                                --------------------------------FR3-IMGT-------------------------------------------------&gt;
+                                                 S  N  R  F  S  G  S  K  S  G  N  T  A  S  L  T  I  S  G  L  Q  A  E  D  E  A  D  Y  Y  C 
+                     lcl|Query_6_reversed  193  TCTAATCGCTTCTCTGGCTCCAAGTCTGGCAACACGGCCTCCCTGACAATCTCTGGGCTCCAGGCTGAGGACGAGGCTGATTATTACTGC  282
+<a name=#_5_IGLV2-23*01></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           181  ..........................................................................................  270
+                                                 S  N  R  F  S  G  S  K  S  G  N  T  A  S  L  T  I  S  G  L  Q  A  E  D  E  A  D  Y  Y  C 
+<a name=#_5_IGLV2-23*03></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           181  ..........................................................................................  270
+<a name=#_5_IGLV2-23*02></a>V  99.7% (294/295)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           181  ..........................................................................................  270
+
+                                                &lt;----------CDR3-IMGT---------&gt;&lt;----------FR4-IMGT----------&gt; 
+                                                 C  S  Y  A  G  S  S  T  W  V  F  G  G  G  T  K  L  T  X  L  
+                     lcl|Query_6_reversed  283  TGCTCATATGCAGGTAGTAGCACTTGGGTGTTCGGCGGAGGGACCAAGCTGACCNTCCTAG  343
+<a name=#_5_IGLV2-23*01></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           271  .........................------------------------------------  295
+                                                 C  S  Y  A  G  S  S  T                                      
+<a name=#_5_IGLV2-23*03></a>V  100.0% (295/295)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           271  .........................------------------------------------  295
+<a name=#_5_IGLV2-23*02></a>V  99.7% (294/295)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           271  .........................------------------------------------  295
+<a name=#_5_IGLJ3*02></a>J  97.2% (35/36)     <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*02</a></span>              3    -------------------------.............................G......  38
+<a name=#_5_IGLJ2*01></a>J  94.3% (33/35)     <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ2*01</a></span>              4    --------------------------...A........................G......  38
+<a name=#_5_IGLJ3*01></a>J  94.3% (33/35)     <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*01</a></span>              4    --------------------------...A........................G......  38
+
+
+Lambda      K        H
+    1.10    0.333    0.549 
+
+Gapped
+Lambda      K        H
+    1.08    0.280    0.540 
+
+Effective search space used: 56187173
+<hr>
+<a name=index6></a>
+
+
+<b>Query=</b> L-D4-XhoI-CL_G11.ab1
+
+Length=377
+                                                                                                      Score     E
+Sequences producing significant alignments:                                                          (Bits)  Value
+
+<a title="Show report for IGLV2-23*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*02</a>germline gene                                                                              <a href=#_6_IGLV2-23*02>424</a>     1e-120
+<a title="Show report for IGLV2-23*03"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*03</a>germline gene                                                                              <a href=#_6_IGLV2-23*03>420</a>     1e-119
+<a title="Show report for IGLV2-23*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLV2-23*01</a>germline gene                                                                              <a href=#_6_IGLV2-23*01>419</a>     3e-119
+<a title="Show report for IGLJ2*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ2*01</a>germline gene                                                                                 <a href=#_6_IGLJ2*01>71.8</a>    9e-17 
+<a title="Show report for IGLJ3*01"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*01</a>germline gene                                                                                 <a href=#_6_IGLJ3*01>71.8</a>    9e-17 
+<a title="Show report for IGLJ3*02"  href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" TARGET="EntrezView" >IGLJ3*02</a>germline gene                                                                                 <a href=#_6_IGLJ3*02>62.2</a>    7e-14 
+
+
+Domain classification requested: imgt
+
+<br>Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence.
+
+<br>V-(D)-J rearrangement summary for query sequence (multiple equivalent top matches, if present, are separated by a comma):
+<table border=1>
+<tr><td>Top V gene match</td><td>Top J gene match</td><td>Chain type</td><td>stop codon</td><td>V-J frame</td><td>Productive</td><td>Strand</td><td>V frame shift</td></tr>
+<tr><td>IGLV2-23*02</td><td>IGLJ2*01,IGLJ3*01</td><td>VL</td><td>Yes</td><td>In-frame</td><td>No</td><td>-</td><td>No</td></tr></table>
+<br>V-(D)-J junction details based on top germline gene matches:
+<table border=1>
+<tr><td>V region end</td><td>V-J junction*</td><td>J region start</td></tr>
+<tr><td>CTTTC</td>	<td></td>	<td>GTGGT</td>	</tr>
+</table>*: Overlapping nucleotides may exist at V-D-J junction (i.e, nucleotides that could be assigned 
+to either rearranging gene).  Such nucleotides are indicated inside a parenthesis (i.e., (TACAT))
+ but are not included under the V, D or J gene itself.
+
+
+Sub-region sequence details:
+<table border=1>
+<tr><td> </td><td>Nucleotide sequence</td><td>Translation</td><td>Start</td><td>End</td><tr><td>CDR3</td><td>TGCTCATATGCAGGTAGTAGCACTTTCGTGGTA	</td><td>CSYAGSSTFVV	</td><td>284	</td><td>316	</td></tr>
+</table>
+
+<br>Alignment summary between query and top germline V gene hit:
+<table border=1><tr><td> </td><td> from </td><td> to </td><td> length </td><td> matches </td><td> mismatches </td><td> gaps </td><td> identity(%) </td></tr>
+<tr><td> FR1-IMGT </td><td> 14 </td><td> 88 </td><td> 75 </td><td> 73 </td><td> 2 </td><td> 0 </td><td> 97.3 </td></tr>
+<tr><td> CDR1-IMGT </td><td> 89 </td><td> 115 </td><td> 27 </td><td> 27 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR2-IMGT </td><td> 116 </td><td> 166 </td><td> 51 </td><td> 51 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> CDR2-IMGT </td><td> 167 </td><td> 175 </td><td> 9 </td><td> 9 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> FR3-IMGT </td><td> 176 </td><td> 283 </td><td> 108 </td><td> 97 </td><td> 11 </td><td> 0 </td><td> 89.8 </td></tr>
+<tr><td> CDR3-IMGT (germline) </td><td> 284 </td><td> 310 </td><td> 27 </td><td> 27 </td><td> 0 </td><td> 0 </td><td> 100 </td></tr>
+<tr><td> Total </td><td> </td><td> </td><td> 297 </td><td> 284 </td><td> 13 </td><td> 0 </td><td> 95.6 </td></tr></table>
+
+<CENTER><b><FONT color="green">Alignments</FONT></b></CENTER>
+
+                                               &lt;--------------------------------FR1-IMGT---------------------------------&gt;&lt;--------CDR1-I
+                                                Q  S  V  L  T  Q  P  A  S  V  S  G  S  P  G  Q  S  I  T  I  S  C  T  G  T  S  S  D  V  G 
+                    lcl|Query_7_reversed  14   CAGTCTGTGCTGACTCAGCCTGCCTCCGTGTCTGGGTCTCCTGGACAGTCGATCACCATCTCCTGCACTGGAACCAGCAGTGATGTTGGG  103
+<a name=#_6_IGLV2-23*02></a>V  95.6% (284/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           1    .......CC.................................................................................  90
+                                                Q  S  <font color="#F805F5"><b>A  </b></font>L  T  Q  P  A  S  V  S  G  S  P  G  Q  S  I  T  I  S  C  T  G  T  S  S  D  V  G 
+<a name=#_6_IGLV2-23*03></a>V  95.3% (283/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           1    .......CC.................................................................................  90
+<a name=#_6_IGLV2-23*01></a>V  95.3% (282/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           1    .......CC.................................................................................  90
+
+                                               MGT--------&gt;&lt;--------------------FR2-IMGT---------------------&gt;&lt;CDR2-IM&gt;&lt;-----------------
+                                                S  Y  N  L  V  S  W  Y  Q  Q  H  P  G  K  A  P  K  L  M  I  Y  E  V  S  K  R  P  S  G  V 
+                    lcl|Query_7_reversed  104  AGTTATAACCTTGTCTCCTGGTACCAACAGCACCCAGGCAAAGCCCCCAAACTCATGATTTATGAGGTCAGTAAGCGGCCCTCAGGGGTT  193
+<a name=#_6_IGLV2-23*02></a>V  95.6% (284/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           91   ..........................................................................................  180
+                                                S  Y  N  L  V  S  W  Y  Q  Q  H  P  G  K  A  P  K  L  M  I  Y  E  V  S  K  R  P  S  G  V 
+<a name=#_6_IGLV2-23*03></a>V  95.3% (283/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           91   ...................................................................G......................  180
+<a name=#_6_IGLV2-23*01></a>V  95.3% (282/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           91   ...................................................................G......................  180
+
+                                               --------------------------------FR3-IMGT-------------------------------------------------&gt;
+                                                X  N  L  F  S  G  X  K  *  G  N  T  A  S  X  T  I  S  G  V  Q  A  E  D  E  X  D  Y  *  C 
+                    lcl|Query_7_reversed  194  TNTAATCTCTTCTCTGGGTNCAAGTAGGGCAACACGGCCTCCCNGACAATCTCTGGGGTCCAGGCTGAGGACGAGGNTGATTATTAATGT  283
+<a name=#_6_IGLV2-23*02></a>V  95.6% (284/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           181  .C.....G.........C.C.....CT................T.............C..................C.........C..C  270
+                                                <font color="#F805F5"><b>S  </b></font>N  <font color="#F805F5"><b>R  </b></font>F  S  G  <font color="#F805F5"><b>S  </b></font>K  <font color="#F805F5"><b>S  </b></font>G  N  T  A  S  <font color="#F805F5"><b>L  </b></font>T  I  S  G  <font color="#F805F5"><b>L  </b></font>Q  A  E  D  E  <font color="#F805F5"><b>A  </b></font>D  Y  <font color="#F805F5"><b>Y  </b></font>C 
+<a name=#_6_IGLV2-23*03></a>V  95.3% (283/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           181  .C.....G.........C.C.....CT................T.............C..................C.........C..C  270
+<a name=#_6_IGLV2-23*01></a>V  95.3% (282/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           181  .C.....G.........C.C.....CT................T.............C..................C.........C..C  270
+
+                                               &lt;-----------CDR3-IMGT-----------&gt;&lt;----------FR4-IMGT----------&gt; 
+                                                C  S  Y  A  G  S  S  T  F  V  V  F  G  G  G  T  K  L  T  V  L  
+                    lcl|Query_7_reversed  284  TGCTCATATGCAGGTAGTAGCACTTTCGTGGTATTCGGCGGAGGGACCAAGCTGACCGTCCTAG  347
+<a name=#_6_IGLV2-23*02></a>V  95.6% (284/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*02</a></span>           271  ...........................-------------------------------------  297
+                                                C  S  Y  A  G  S  S  T  F                                      
+<a name=#_6_IGLV2-23*03></a>V  95.3% (283/297)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*03&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*03</a></span>           271  ...........................-------------------------------------  297
+<a name=#_6_IGLV2-23*01></a>V  95.3% (282/296)  <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLV2-23*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLV2-23*01</a></span>           271  ..........................--------------------------------------  296
+<a name=#_6_IGLJ2*01></a>J  100.0% (37/37)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ2*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ2*01</a></span>              2    ---------------------------.....................................  38
+<a name=#_6_IGLJ3*01></a>J  100.0% (37/37)   <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*01&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*01</a></span>              2    ---------------------------.....................................  38
+<a name=#_6_IGLJ3*02></a>J  97.1% (34/35)    <span class="jig-ncbipopper" data-jigconfig="destText:'germline gene'"><a onclick="window.open(this.href,'EntrezView')" href="/projects/igblast/Idlink.cgi?seqname=IGLJ3*02&taxid=9606&dbname=IG_DB%2Fimgt.Homo_sapiens.V.f.orf.p+IG_DB%2Fimgt.Homo_sapiens.D.f.orf+IG_DB%2Fimgt.Homo_sapiens.J.f.orf+" >IGLJ3*02</a></span>              4    -----------------------------...G...............................  38
+
+
+Lambda      K        H
+    1.10    0.333    0.549 
+
+Gapped
+Lambda      K        H
+    1.08    0.280    0.540 
+
+Effective search space used: 57170039
+<hr>
+<a name=clonotype></a>
+
+Total queries = 7
+Total identifiable CDR3 = 7
+Total unique clonotypes = 7
+
+
+Clonotype summary.  A particular clonotype includes any V(D)J rearrangements that have the same germline V(D)J gene segments,
+ the same productive/non-productive status and the same CDR3 nucleotide as well as amino sequence (Those having the same 
+CDR3 nucleotide but different amino acid sequence or productive/non-productive status due to frameshift in V or J gene
+ are assigned to a different clonotype.  However, they share the same identifier prefix, for example, 6a, 6b).
+
+<table border=1>
+<tr><td>ID</td><td>Representative query name</td><td>Count</td><td>Frequency(%)</td><td>CDR3 nucleotide seq</td><td>CDR3 amino acid seq</td><td>Productive</td><td>Chain type</td><td>V gene</td><td>D gene</td><td>J gene</td></tr>
+
+<tr><td>1</td><td><a href=#index4>L-C2-XhoI-CL_E11.ab1</a></td><td>1</td><td>14.3</td><td>CAGGTGTGGGATAGTAGTAGTGATCCCCATTATGTC</td><td>QVWDSSSDPHYV</td><td>Yes</td><td>VL</td><td>IGLV3-21*02</td><td>N/A</td><td>IGLJ1*01</td></tr>
+<tr><td>2</td><td><a href=#index1>L-A11-XhoI-CL_B11.ab1</a></td><td>1</td><td>14.3</td><td>GCAGCATGGGATGACAGCCTGAATGGTCCGGTG</td><td>AAWDDSLNGPV</td><td>Yes</td><td>VL</td><td>IGLV1-44*01</td><td>N/A</td><td>IGLJ3*02</td></tr>
+<tr><td>3</td><td><a href=#index0>L-A10-XhoI-CL_A11.ab1</a></td><td>1</td><td>14.3</td><td>GGAACAAGGGATAGCAGCCTGAGCGCGGCGGTA</td><td>GTRDSSLSAAV</td><td>Yes</td><td>VL</td><td>IGLV1-51*01</td><td>N/A</td><td>IGLJ2*01,IGLJ3*01</td></tr>
+<tr><td>4</td><td><a href=#index2>L-B2-XhoI-CL_C11.ab1</a></td><td>1</td><td>14.3</td><td>TGCTCATATGCAGGTAGTAGCACTGTGGTA</td><td>CSYAGSSTVV</td><td>Yes</td><td>VL</td><td>IGLV2-23*02</td><td>N/A</td><td>IGLJ2*01,IGLJ3*01</td></tr>
+<tr><td>5</td><td><a href=#index5>L-D3-XhoI-CL_F11.ab1</a></td><td>1</td><td>14.3</td><td>TGCTCATATGCAGGTAGTAGCACTTGGGTG</td><td>CSYAGSSTWV</td><td>Yes</td><td>VL</td><td>IGLV2-23*01,IGLV2-23*03</td><td>N/A</td><td>IGLJ3*02</td></tr>
+<tr><td>6</td><td><a href=#index6>L-D4-XhoI-CL_G11.ab1</a></td><td>1</td><td>14.3</td><td>TGCTCATATGCAGGTAGTAGCACTTTCGTGGTA</td><td>CSYAGSSTFVV</td><td>No</td><td>VL</td><td>IGLV2-23*02</td><td>N/A</td><td>IGLJ2*01,IGLJ3*01</td></tr>
+<tr><td>7</td><td><a href=#index3>L-B6-XhoI-CL_D11.ab1</a></td><td>1</td><td>14.3</td><td>TTGCTCTCCTATAGTGGTGCTTTGGGTG</td><td>LLSYSGALG</td><td>No</td><td>VL</td><td>IGLV7-46*04</td><td>N/A</td><td>IGLJ3*02</td></tr>
+</table>
+
+All query sequence(s) grouped by clonotypes. Identity refers to similarity between the query and top germline V gene
+
+<table border=1>
+<tr><td>ID</td><td>Count</td><td>Frequency(%)</td><td>Min identity(%)</td><td>Max identity(%)</td><td>Avg identity(%)</td><td>All query name(s)</td></tr>
+<tr><td>1</td><td>1</td><td>14.3</td><td>99.3</td><td>99.3</td><td>99.3</td><td><a href=#index4>L-C2-XhoI-CL_E11.ab1</a></td></tr>
+<tr><td>2</td><td>1</td><td>14.3</td><td>99.7</td><td>99.7</td><td>99.7</td><td><a href=#index1>L-A11-XhoI-CL_B11.ab1</a></td></tr>
+<tr><td>3</td><td>1</td><td>14.3</td><td>99</td><td>99</td><td>99</td><td><a href=#index0>L-A10-XhoI-CL_A11.ab1</a></td></tr>
+<tr><td>4</td><td>1</td><td>14.3</td><td>99.7</td><td>99.7</td><td>99.7</td><td><a href=#index2>L-B2-XhoI-CL_C11.ab1</a></td></tr>
+<tr><td>5</td><td>1</td><td>14.3</td><td>100</td><td>100</td><td>100</td><td><a href=#index5>L-D3-XhoI-CL_F11.ab1</a></td></tr>
+<tr><td>6</td><td>1</td><td>14.3</td><td>95.6</td><td>95.6</td><td>95.6</td><td><a href=#index6>L-D4-XhoI-CL_G11.ab1</a></td></tr>
+<tr><td>7</td><td>1</td><td>14.3</td><td>99.7</td><td>99.7</td><td>99.7</td><td><a href=#index3>L-B6-XhoI-CL_D11.ab1</a></td></tr>
+</table>
+
+
+  Database: imgt.Homo_sapiens.V.f.orf.p
+    Posted date:  Jul 19, 2023  2:53 PM
+  Number of letters in database: 181,115
+  Number of sequences in database:  618
+
+  Database: imgt.Homo_sapiens.D.f.orf
+    Posted date:  Jan 13, 2023  12:47 PM
+  Number of letters in database: 919
+  Number of sequences in database:  37
+
+  Database: imgt.Homo_sapiens.J.f.orf
+    Posted date:  May 17, 2012  12:56 PM
+  Number of letters in database: 1,426
+  Number of sequences in database:  32
+
+
+
+Matrix: blastn matrix 1 -1
+Gap Penalties: Existence: 4, Extension: 1
+</PRE>
+</BODY>
+</HTML>
+        
+        </div><!--/#content-->
+        
+   </div><!--/#content-wrap-->
+    <footer>
+      <section class="icon-section">
+        <div id="icon-section-header" class="icon-section_header">Follow NCBI</div>
+        <div class="grid-container container">
+          <div class="icon-section_container">
+            <a class="footer-icon" id="footer_twitter" href="https://twitter.com/ncbi" aria-label="Twitter"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                <defs>
+                  <style>
+                    .cls-11 {
+                      fill: #737373;
+                    }
+                  </style>
+                </defs>
+                <title>Twitter</title>
+                <path class="cls-11" d="M250.11,105.48c-7,3.14-13,3.25-19.27.14,8.12-4.86,8.49-8.27,11.43-17.46a78.8,78.8,0,0,1-25,9.55,39.35,39.35,0,0,0-67,35.85,111.6,111.6,0,0,1-81-41.08A39.37,39.37,0,0,0,81.47,145a39.08,39.08,0,0,1-17.8-4.92c0,.17,0,.33,0,.5a39.32,39.32,0,0,0,31.53,38.54,39.26,39.26,0,0,1-17.75.68,39.37,39.37,0,0,0,36.72,27.3A79.07,79.07,0,0,1,56,223.34,111.31,111.31,0,0,0,116.22,241c72.3,0,111.83-59.9,111.83-111.84,0-1.71,0-3.4-.1-5.09C235.62,118.54,244.84,113.37,250.11,105.48Z">
+                </path>
+              </svg></a>
+            <a class="footer-icon" id="footer_facebook" href="https://www.facebook.com/ncbi.nlm" aria-label="Facebook"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                <title>Facebook</title>
+                <path class="cls-11" d="M210.5,115.12H171.74V97.82c0-8.14,5.39-10,9.19-10h27.14V52l-39.32-.12c-35.66,0-42.42,26.68-42.42,43.77v19.48H99.09v36.32h27.24v109h45.41v-109h35Z">
+                </path>
+              </svg></a>
+            <a class="footer-icon" id="footer_linkedin" href="https://www.linkedin.com/company/ncbinlm" aria-label="LinkedIn"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                <title>LinkedIn</title>
+                <path class="cls-11" d="M101.64,243.37H57.79v-114h43.85Zm-22-131.54h-.26c-13.25,0-21.82-10.36-21.82-21.76,0-11.65,8.84-21.15,22.33-21.15S101.7,78.72,102,90.38C102,101.77,93.4,111.83,79.63,111.83Zm100.93,52.61A17.54,17.54,0,0,0,163,182v61.39H119.18s.51-105.23,0-114H163v13a54.33,54.33,0,0,1,34.54-12.66c26,0,44.39,18.8,44.39,55.29v58.35H198.1V182A17.54,17.54,0,0,0,180.56,164.44Z">
+                </path>
+              </svg></a>
+            <a class="footer-icon" id="footer_github" href="https://github.com/ncbi" aria-label="GitHub"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                <defs>
+                  <style>
+                    .cls-11,
+                    .cls-12 {
+                      fill: #737373;
+                    }
+
+                    .cls-11 {
+                      fill-rule: evenodd;
+                    }
+                  </style>
+                </defs>
+                <title>GitHub</title>
+                <path class="cls-11" d="M151.36,47.28a105.76,105.76,0,0,0-33.43,206.1c5.28,1,7.22-2.3,7.22-5.09,0-2.52-.09-10.85-.14-19.69-29.42,6.4-35.63-12.48-35.63-12.48-4.81-12.22-11.74-15.47-11.74-15.47-9.59-6.56.73-6.43.73-6.43,10.61.75,16.21,10.9,16.21,10.9,9.43,16.17,24.73,11.49,30.77,8.79,1-6.83,3.69-11.5,6.71-14.14C108.57,197.1,83.88,188,83.88,147.51a40.92,40.92,0,0,1,10.9-28.39c-1.1-2.66-4.72-13.42,1-28,0,0,8.88-2.84,29.09,10.84a100.26,100.26,0,0,1,53,0C198,88.3,206.9,91.14,206.9,91.14c5.76,14.56,2.14,25.32,1,28a40.87,40.87,0,0,1,10.89,28.39c0,40.62-24.74,49.56-48.29,52.18,3.79,3.28,7.17,9.71,7.17,19.58,0,14.15-.12,25.54-.12,29,0,2.82,1.9,6.11,7.26,5.07A105.76,105.76,0,0,0,151.36,47.28Z">
+                </path>
+                <path class="cls-12" d="M85.66,199.12c-.23.52-1.06.68-1.81.32s-1.2-1.06-.95-1.59,1.06-.69,1.82-.33,1.21,1.07.94,1.6Zm-1.3-1">
+                </path>
+                <path class="cls-12" d="M90,203.89c-.51.47-1.49.25-2.16-.49a1.61,1.61,0,0,1-.31-2.19c.52-.47,1.47-.25,2.17.49s.82,1.72.3,2.19Zm-1-1.08">
+                </path>
+                <path class="cls-12" d="M94.12,210c-.65.46-1.71,0-2.37-.91s-.64-2.07,0-2.52,1.7,0,2.36.89.65,2.08,0,2.54Zm0,0"></path>
+                <path class="cls-12" d="M99.83,215.87c-.58.64-1.82.47-2.72-.41s-1.18-2.06-.6-2.7,1.83-.46,2.74.41,1.2,2.07.58,2.7Zm0,0">
+                </path>
+                <path class="cls-12" d="M107.71,219.29c-.26.82-1.45,1.2-2.64.85s-2-1.34-1.74-2.17,1.44-1.23,2.65-.85,2,1.32,1.73,2.17Zm0,0">
+                </path>
+                <path class="cls-12" d="M116.36,219.92c0,.87-1,1.59-2.24,1.61s-2.29-.68-2.3-1.54,1-1.59,2.26-1.61,2.28.67,2.28,1.54Zm0,0">
+                </path>
+                <path class="cls-12" d="M124.42,218.55c.15.85-.73,1.72-2,1.95s-2.37-.3-2.52-1.14.73-1.75,2-2,2.37.29,2.53,1.16Zm0,0"></path>
+              </svg></a>
+            <a class="footer-icon" id="footer_blog" href="https://ncbiinsights.ncbi.nlm.nih.gov/" aria-label="Blog">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-1{fill:#737373;}</style></defs><path class="cls-1" d="M14,30a4,4,0,1,1-4-4,4,4,0,0,1,4,4Zm11,3A19,19,0,0,0,7.05,15a1,1,0,0,0-1,1v3a1,1,0,0,0,.93,1A14,14,0,0,1,20,33.07,1,1,0,0,0,21,34h3a1,1,0,0,0,1-1Zm9,0A28,28,0,0,0,7,6,1,1,0,0,0,6,7v3a1,1,0,0,0,1,1A23,23,0,0,1,29,33a1,1,0,0,0,1,1h3A1,1,0,0,0,34,33Z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid bg-primary">
+        <div class="container pt-5">
+          <div class="row mt-3">
+            <div class="col-lg-3 col-12">
+              <p><a class="text-white" href="https://www.nlm.nih.gov/socialmedia/index.html">Connect with NLM</a></p>
+              <ul class="list-inline social_media">
+                <li class="list-inline-item"><a href="https://twitter.com/NLM_NIH" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 249 249" style="enable-background:new 0 0 249 249;" xml:space="preserve">
+                      <style type="text/css">
+                        .st20 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st30 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+                      </style>
+                      <title>SM-Twitter</title>
+                      <g>
+                        <g>
+                          <g>
+                            <path class="st20" d="M192.9,88.1c-5,2.2-9.2,2.3-13.6,0.1c5.7-3.4,6-5.8,8.1-12.3c-5.4,3.2-11.4,5.5-17.6,6.7
+                                                c-10.5-11.2-28.1-11.7-39.2-1.2c-7.2,6.8-10.2,16.9-8,26.5c-22.3-1.1-43.1-11.7-57.2-29C58,91.6,61.8,107.9,74,116
+                                                c-4.4-0.1-8.7-1.3-12.6-3.4c0,0.1,0,0.2,0,0.4c0,13.2,9.3,24.6,22.3,27.2c-4.1,1.1-8.4,1.3-12.5,0.5c3.6,11.3,14,19,25.9,19.3
+                                                c-11.6,9.1-26.4,13.2-41.1,11.5c12.7,8.1,27.4,12.5,42.5,12.5c51,0,78.9-42.2,78.9-78.9c0-1.2,0-2.4-0.1-3.6
+                                                C182.7,97.4,189.2,93.7,192.9,88.1z"></path>
+                          </g>
+                        </g>
+                        <circle class="st30" cx="124.4" cy="128.8" r="108.2"></circle>
+                      </g>
+                    </svg></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/nationallibraryofmedicine" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 249 249" style="enable-background:new 0 0 249 249;" xml:space="preserve">
+                      <style type="text/css">
+                        .st10 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st110 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+                      </style>
+                      <title>SM-Facebook</title>
+                      <g>
+                        <g>
+                          <path class="st10" d="M159,99.1h-24V88.4c0-5,3.3-6.2,5.7-6.2h16.8V60l-24.4-0.1c-22.1,0-26.2,16.5-26.2,27.1v12.1H90v22.5h16.9
+                                                      v67.5H135v-67.5h21.7L159,99.1z"></path>
+                        </g>
+                      </g>
+                      <circle class="st110" cx="123.6" cy="123.2" r="108.2"></circle>
+                    </svg>
+                  </a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/user/NLMNIH" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 249 249" style="enable-background:new 0 0 249 249;" xml:space="preserve">
+                      <title>SM-Youtube</title>
+                      <style type="text/css">
+                        .st4 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .st5 {
+                          fill: #FFFFFF;
+                        }
+                      </style>
+                      <circle class="st4" cx="124.2" cy="123.4" r="108.2"></circle>
+                      <g transform="translate(0,-952.36218)">
+                        <path class="st5" d="M88.4,1037.4c-10.4,0-18.7,8.3-18.7,18.7v40.1c0,10.4,8.3,18.7,18.7,18.7h72.1c10.4,0,18.7-8.3,18.7-18.7
+                                            v-40.1c0-10.4-8.3-18.7-18.7-18.7H88.4z M115.2,1058.8l29.4,17.4l-29.4,17.4V1058.8z"></path>
+                      </g>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12">
+              <p class="address_footer text-white">National Library of Medicine<br>
+                <a href="https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/@38.9959508,-77.101021,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb:0x19156f88b27635b8!8m2!3d38.9959508!4d-77.0988323" class="text-white" target="_blank" rel="noopener noreferrer">8600 Rockville Pike<br>
+                  Bethesda, MD 20894</a></p>
+            </div>
+            <div class="col-lg-3 col-12 centered-lg">
+              <p><a href="https://www.nlm.nih.gov/web_policies.html" class="text-white">Web Policies</a><br>
+                <a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" class="text-white">FOIA</a><br>
+                <a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" class="text-white" id="vdp">HHS Vulnerability Disclosure</a></p>
+            </div>
+            <div class="col-lg-3 col-12 centered-lg">
+              <p><a class="supportLink text-white" href="https://support.nlm.nih.gov/">Help</a><br>
+                <a href="https://www.nlm.nih.gov/accessibility.html" class="text-white">Accessibility</a><br>
+                <a href="https://www.nlm.nih.gov/careers/careers.html" class="text-white">Careers</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 centered-lg">
+              <nav class="bottom-links">
+                <ul class="mt-3">
+                  <li>
+                    <a class="text-white" href="//www.nlm.nih.gov/">NLM</a>
+                  </li>
+                  <li>
+                    <a class="text-white" href="https://www.nih.gov/">NIH</a>
+                  </li>
+                  <li>
+                    <a class="text-white" href="https://www.hhs.gov/">HHS</a>
+                  </li>
+                  <li>
+                    <a class="text-white" href="https://www.usa.gov/">USA.gov</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+<div class="" id="banner_ad">
+<div>
+<div> <i class="fas fa-user-friends"></i><span>
+<a href="mailto:blast-help@ncbi.nlm.nih.gov?subject=IgBLAST user research.&amp;body=Please contact me about how I use IgBLAST and how I can contribute to improving it." id="jt" class="jt" target="hlp">Participate in IgBLAST user interviews.</span></a></div>
+<div class="help">We want to hear from you about how IgBLAST can be improved.</div>
+</div>
+<input class="sbt" id="btnJt" type="button" value="Contact us" src=""/>
+<button class="close" id="closeAd" aria-controls="banner_ad" blastspec="igblast"><i class="fas fa-times"></i></button>
+</div>
+<script type="text/javascript" src="js/nwds.js"></script>
+<script type="text/javascript" src="js/ncbipopup.js"></script>
+<script type="text/javascript" src="js/remote_data_provider.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script src="js/uswds.min.js"></script>
+</div><!--/#wrap-->
+<script type="text/javascript" src="/portal/portal3rc.fcgi/rlib/js/InstrumentOmnitureBaseJS/InstrumentNCBIBaseJS/InstrumentPageStarterJS.js"></script>
+</body>
+</html>
